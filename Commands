@@ -1,1 +1,11 @@
+alias
+Get-Help "coomandname"
+Get-Command -CommandType Cmdlet -Name *process* | more
+Get-Command -Verb start/start
 
+Start-Process notepad/"name of the process"
+Stop-Process notepad  [ parameters: get-id ]
+
+Get-Process -Name notepad
+
+ls | Format-Table Name
