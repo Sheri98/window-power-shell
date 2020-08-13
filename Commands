@@ -7,5 +7,89 @@ Start-Process notepad/"name of the process"
 Stop-Process notepad  [ parameters: get-id ]
 
 Get-Process -Name notepad
+4.
+ls/Get-ChildItem | Format-Table Name
+Get-Process | out-GridView 
+GEt-Process | Out-File -FilePath C:\text\proces.txt
+Get-Content{cat} C:\text\proces.txt
+Get-ChiltItem | Format-List * | Out-FIle -Filepath c:\text\list.txt
+Get-content c:\text\list.txt
 
-ls | Format-Table Name
+5.
+$a = "hello"
+$a { to print}
+$a=3
+$a*=2 => 6
+4 -eq 4 { -ne,-gt,lt}
+"Hello Sheri" -match "Hello" { will print to if there is any match,case insensitive } 
+"Hello Sheri" -replace "sheri","shravan"
+"sheri" -in "Hello Sheri" { checks for complete string }
+Get-Location > c:\text\loc.txt { >> append }
+Get-Process none,explorer 2>&1
+
+6.
+logical{-and,-or,xor,!},split and join{-split and -join},type operators{-is,isnot,-as}
+string -split delimeter,range{optional}
+string1,string2 -join delimeter
+3 -is "int" { True }
+0x12 -as  "int"
+$value.gettype()
+
+7.
+strings:
+double quotes:
+$str = "exampanded"
+"examle string: $str" { will print value of $str }
+single quotes:
+doesn't exaands
+@"
+>> Hi 
+>>THis
+>>multipleline
+>>"@ { u can use ' same difeerence }
+
+8.
+[int]$a = 3.2 + 2 or $a = 3.2 +2 ;[int]$a
+$array = 1,"hello",2.2
+$array.length
+$array[index]
+$emptyarray = @()
+
+9.
+if (1 -gt 0 ) { "one} else { "something" }
+if( ((Get-process).count) -gt 40 ) { "to many processes " } else { "ok" }
+switch(1){ 1 {"one"} 2{"two'}}
+switch -wildcard('abc') { a* {"A"} *b* {"B"} c* {"C"} }
+switch -Regex -File C:\test\WindowsUpdate.log { 'VAlidating'{$_}}
+
+10.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
