@@ -63,7 +63,9 @@ switch -wildcard('abc') { a* {"A"} *b* {"B"} c* {"C"} }
 switch -Regex -File C:\test\WindowsUpdate.log { 'VAlidating'{$_}}
 
 10.
-
+for;while
+foreach ( $porc in $proce ) { $_ }
+whileeach-object ( $process -match "hello") { $_}
 
 
 
