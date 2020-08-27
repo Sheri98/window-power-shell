@@ -67,6 +67,9 @@ for;while
 foreach ( $porc in $proce ) { $_ }
 whileeach-object ( $process -match "hello") { $_}
 
+11.
+$env:PSModulePath
+
 
 
 
